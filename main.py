@@ -6,7 +6,7 @@ import plotly.express as px
 
 # jtplot.style(theme='monokai', ticks=True) (Essa maneira de usar temas também não funciona com esse tipo de função de mapa por algum motivo
 
-df = gpd.read_file("rio.json")
+df = gpd.read_file("geojson\\brasil.json")
 print(df.head())
 
 fig = px.choropleth(df,
