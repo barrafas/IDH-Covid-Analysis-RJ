@@ -1,10 +1,10 @@
 import pandas as pd
 import geopandas as gpd
-from jupyterthemes import jtplot
+# from jupyterthemes import jtplot
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-jtplot.style(theme='monokai', ticks=True)
+# jtplot.style(theme='monokai', ticks=True) (Essa maneira de usar temas também não funciona com esse tipo de função de mapa por algum motivo
 
 df = gpd.read_file("rio.json")
 print(df.head())
